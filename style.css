@@ -1,0 +1,265 @@
+* {
+    margin: 0;
+    padding: 0;
+    font-family: 'Poppins', sans-serif;
+    text-decoration: none;
+    list-style: none;
+    box-sizing: border-box;
+}
+
+body {
+    background: dodgerblue;
+}
+
+header {
+    background: #fff;
+    width: 100%;
+    height: 80px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0 100px;
+}
+
+.logo {
+    font-size: 28px;
+    font-weight: bold;
+    color: #000;
+}
+
+.hamburger {
+    display: none;
+
+}
+
+.nav-bar ul {
+    display: flex;
+}
+
+.nav-bar ul li a {
+    display: block;
+    color: #000;
+    font-size: 20px;
+    padding: 10px 25px;
+    border-radius: 50px;
+    transition: 0.2s;
+    margin: 0 5px;
+}
+
+.nav-bar ul li a:hover {
+    color: white;
+    background: aqua;
+
+}
+
+.nav-bar ul li a.active {
+    color: white;
+    background: aqua;
+}
+
+@media only screen and (max-width:1320px) {
+    header {
+        padding: 0 50 px;
+    }
+}
+
+@media only screen and (max-width: 1100px) {
+    header {
+        padding: 0 30px;
+    }
+}
+
+@media only screen and (max-width: 900px) {
+    .hamburger {
+        display: block;
+        cursor: pointer;
+    }
+
+    .hamburger .line {
+        width: 30px;
+        height: 3px;
+        background: black;
+        margin: 6px 0;
+    }
+
+    .nav-bar {
+        height: 0;
+        position: absolute;
+        top: 80px;
+        left: 0;
+        right: 0;
+        width: 100vw;
+        background: white;
+        transition: 0.5s;
+        overflow: hidden;
+    }
+
+    .nav-bar.active {
+        height: 450px;
+    }
+
+    .nav-bar ul {
+        display: block;
+        width: fit-content;
+        margin: 80px auto 0 auto;
+        text-align: center;
+        transition: 0.5s;
+        opacity: 0;
+    }
+
+    .nav-bar.active ul {
+        opacity: 1;
+    }
+
+    .nav-bar ul li a {
+        margin-bottom: 12px;
+    }
+}
+
+.main-map-content {
+    /* margin: 100px;
+    font-size: 1rem;
+    font-weight: 400;
+    line-height: 1.5;
+    color: #212529;
+    text-align: left;
+    background-color: #fff;
+    display: flex;
+    justify-content: center;
+    font-family: 'Montserrat', sans-serif; */
+
+}
+
+
+
+@media only screen and (max-width: 600px) {
+    .jumbotron {
+        padding: 4rem 2rem;
+    }
+
+}
+
+@media only screen and (max-width: 768px) {
+
+    .jumbotron {
+        width: 100%;
+    }
+
+    .jumbotron .jumbotron-filters {
+        height: 450px !important;
+        flex-direction: column;
+
+    }
+
+}
+
+@media only screen and (max-width: 320px) {
+
+    .jumbotron {
+        width: 100%;
+    }
+
+    .jumbotron .jumbotron-filters {
+        height: 500px !important;
+        flex-direction: column;
+
+    }
+}
+
+/* Media query */
+@media (min-width: 576px) {
+    .jumbotron {
+        padding: 2rem 1rem;
+        margin-bottom: 2rem;
+        background-color: #e9ecef;
+        border-radius: 1rem;
+        justify-content: center;
+        width: 100%;
+        height: 300px;
+        display: flex;
+        align-items: flex-end;
+        justify-content: center;
+    }
+
+}
+
+
+
+.jumbotron {
+
+    padding: 2rem 1rem;
+    margin-bottom: 2rem;
+    background-color: #e9ecef;
+    border-radius: 1rem;
+    justify-content: center;
+
+    height: 500px;
+    display: flex;
+    align-items: flex-end;
+    justify-content: center;
+}
+
+
+.jumbotron-filters {
+
+    padding: 2rem 1rem;
+    background-color: #fff;
+    border-radius: 1rem;
+    width: 100%;
+    height: 125px;
+    padding: 10px;
+    box-shadow: 0px 5px 10px rgba(0, 0, 0, 0.25);
+    display: flex;
+    align-items: center;
+    margin-bottom: 2rem;
+    justify-content: center;
+
+}
+
+.jumbotron-filters-item {
+    text-align: center;
+    width: 100%;
+}
+
+.jumbotron-filters-item i {
+    display: flex;
+    justify-content: center;
+}
+
+.jumbotron-filters-item p {
+    display: flex;
+    justify-content: center;
+}
+
+
+/*#region Select Location */
+
+.selectLocation {
+    border: 0 solid rgb(255, 255, 255);
+    overflow: hidden;
+    border-radius: 15px;
+    margin-left: 20px;
+    margin-top: 20px;
+    text-align: center;
+    justify-content: center;
+    display: flex;
+}
+
+
+
+.selectLocation select {
+    border: 0 solid rgb(255, 255, 255);
+    text-decoration: underline;
+    width: 100%;
+    border-radius: 15px;
+    text-align: center;
+    justify-content: center;
+    display: flex;
+}
+
+/*#endregion */
+.info-hotels {
+    background: #D1EFF1;
+    width: 100%;
+    height: 100px;
+}
