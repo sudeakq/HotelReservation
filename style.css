@@ -338,14 +338,14 @@ body {
 }
 
 .course {
-    margin-top: 50px;
-    margin-bottom: 50px;
+    margin-top: 20;
+    margin-bottom: 20px;
     background-color: rgb(218, 236, 237);
-    border-radius: 10px;
+    border-radius: 20px;
     box-shadow: 0px 10px 10px rgba (0, 0, 0, .2);
     display: flex;
     max-width: 100%;
-    overflow: hidden;
+
 
 
 }
@@ -353,14 +353,12 @@ body {
 
 
 .preview {
-    background: rgb(218, 236, 237);
-    color: blue;
-    padding: 5px;
-    width: 250px;
 
     margin: auto;
     display: block;
 }
+
+.preview img {}
 
 /* .preview a {
     color: black;
@@ -417,32 +415,53 @@ body {
     font-weight: bold;
 }
 
-.btn {
+/* .btn {
     background: #64CACF !important;
     border: 1px solid transparent;
     box-shadow: 0px 5px 10px rgba(0, 0, 0, .2);
     color: white !important;
     font-size: 16px;
-    padding: 10px 70px !important;
-    margin-right: 20px;
+
     float: right;
     letter-spacing: 1px;
     cursor: pointer;
     transition: all .4s ease-in-out;
     font-weight: bold;
     border-radius: 50px !important;
+} */
+
+.btn {
+    width: 180px;
+    float: right;
+    margin-top: -70px !important;
+
 }
 
-.btn:hover {
+.btn a {
+    color: white !important;
+}
+
+
+
+.btn i {
+    margin-right: 20px;
+}
+
+/* .btn:hover {
     background: #fff;
     color: black;
     border: 1px solid rgb(100, 202, 207);
     transform: scale(1.05);
-}
+} */
 
 @media(max-width:768px) {
     .course {
         flex-direction: column;
+    }
+
+    .btn {
+        margin-top: -50px !important;
+        width: 60%;
     }
 
     .preview {
@@ -481,13 +500,19 @@ body {
     }
 }
 
-.btn {
-    margin-top: -90px;
+
+
+.course img {
+    width: 100%;
+}
+
+.row {
+    margin: 0;
+    padding: 0;
 }
 
 .img {
-    height: auto;
-    width: 200px;
+
     border-radius: 10px 10px 10px 10px;
 
 }
@@ -690,6 +715,10 @@ h6 {
     overflow: auto;
 }
 
+.info h2 {
+    display: flex;
+}
+
 @media screen and (max-width: 700px) {
     .box {
         width: 70%;
@@ -784,16 +813,7 @@ button {
     cursor: pointer;
 }
 
-.img {
-    overflow: hidden;
-    z-index: 2;
-    position: absolute;
-    left: 0;
-    top: 0;
-    width: 260px;
-    height: 100%;
-    padding-top: 360px;
-}
+.img {}
 
 .img:before {
     content: '';
