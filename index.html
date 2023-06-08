@@ -1,6 +1,3 @@
-<?php
-$navbar =
-    '
 <!DOCTYPE html>
 <html lang="en">
 
@@ -25,12 +22,12 @@ $navbar =
     <link
         href="https://fonts.googleapis.com/css2?family=Alkatra&family=Lato:wght@100&family=Montserrat:wght@100;400&family=Nunito:wght@500&family=Quicksand:wght@300&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700&family=Source+Sans+Pro:wght@200&display=swap"
         rel="stylesheet">
-        
+
 </head>
 
 <body>
     <header>
-        <div class="logo">LOGO</div>
+        <div class="logo"><img src="img/k.png" height="80rem" alt="logo" /></div>
         <div class="hamburger">
             <div class="line"></div>
             <div class="line"></div>
@@ -57,173 +54,189 @@ $navbar =
 
 
         </nav>
-</header>
-<div class="container">
+    </header>
+    <div class="container">
 
-    <div class="main-map-content mt-5">
+        <div class="main-map-content mt-5">
 
-        <div class="row">
-            <div class="col-md-12">
-                <div class="jumbotron">
-                </div>
+            <div class="row">
+                <div class="col-md-12">
+                    <div class="jumbotron" style="background-image: url('img/otelkonum2.png');background-repeat: no-repeat; 
+                        background-size: cover; ">
+                    </div>
 
-                <div class="jumbotron-filters">
-                    <div class="jumbotron-filters-item col-4">
-                        <i class="fa-solid fa-globe" style="color:#64CACF"></i>
-                        <p class="pt-2"><b>Lokasyon</b></p>
-                        <div class="selectLocation">
-                            <select id="select">
-                                <option value="01">İstanbul</option>
-                                <option value="02">Trabzon</option>
-                            </select>
+                    <div class="jumbotron-filters">
+                        <div class="jumbotron-filters-item col-4">
+                            <i class="fa-solid fa-globe" style="color:#64CACF"></i>
+                            <p class="pt-2"><b>Lokasyon</b></p>
+                            <div class="selectLocation">
+                                <select id="select">
+                                    <option value="01">İstanbul</option>
+                                    <option value="02">Trabzon</option>
+                                </select>
+                            </div>
                         </div>
-                    </div>
-                    <div class="jumbotron-filters-item col-4">
-                        <i class="fa-solid fa-hotel" style="color:#64CACF"></i>
-                        <p class="pt-2 abc"><b>Kategori</b></p>
-                        <div class="selectLocation">
-                            <select id="select">
-                                <option value="01">Otel</option>
-                                <option value="02">Pansiyon</option>
-                                <option value="02">Kiralık ev</option>
-                            </select>
+                        <div class="jumbotron-filters-item col-4">
+                            <i class="fa-solid fa-hotel" style="color:#64CACF"></i>
+                            <p class="pt-2 abc"><b>Kategori</b></p>
+                            <div class="selectLocation">
+                                <select id="select">
+                                    <option value="01">Otel</option>
+                                    <option value="02">Pansiyon</option>
+                                    <option value="02">Kiralık ev</option>
+                                </select>
+                            </div>
                         </div>
+                        <div class="jumbotron-filters-item col-4 pt-3">
+                            <i class="fa-solid fa-phone" style="color:#64CACF"></i>
+
+                            <p class="pt-2"><b>Bilgi Alın!</b></p>
+                            <p style="text-decoration: underline;">0505 771 6455</p>
+
+                        </div>
+
+
                     </div>
-                    <div class="jumbotron-filters-item col-4 pt-3">
-                        <i class="fa-solid fa-phone" style="color:#64CACF"></i>
-
-                        <p class="pt-2"><b>Bilgi Alın!</b></p>
-                        <p style="text-decoration: underline;">0505 771 6455</p>
-
-                    </div>
-
 
                 </div>
 
             </div>
+        </div>
 
+    </div>
+    <div class="blue-line pl-5" style="height: 100px; background-color: #D1EFF1;">
+        <div class="col-8 ">
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Eligendi deleniti odit dolore, doloremque dolorem
+            consectetur quaerat odio aliquam facilis ullam corrupti assumenda quo doloribus nulla ad vitae debitis
+            possimus! Aliquam!
+        </div>
+        <div class="col-2 justify-content-center d-flex" style="font-size: 24px;">
+            <b>100+</b> HOTEL
+        </div>
+        <div class="col-2 justify-content-center d-flex" style="font-size: 24px;">
+            <b>10M</b> ROOMS
         </div>
     </div>
-   
-</div>
-<div class="blue-line pl-5" style="height: 100px; background-color: #D1EFF1;">
-                <div class="col-8 ">
-                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Eligendi deleniti odit dolore, doloremque dolorem consectetur quaerat odio aliquam facilis ullam corrupti assumenda quo doloribus nulla ad vitae debitis possimus! Aliquam!
-                </div>
-                   <div class="col-2 justify-content-center d-flex"style="font-size: 24px;">
-                     <b>100+</b> HOTEL 
-                    </div>
-                <div class="col-2 justify-content-center d-flex" style="font-size: 24px;">
-                    <b>10M</b> ROOMS 
-                </div>
-</div>
-<div class="container">
-    <div class="filter-bar p-2 mt-3 col-md-12">
-        Otel Filtreleme
-    </div>
-    <div class="course">
-        <div class="col-md-3" style="margin: 0; padding: 0;" >
-                <div  class="preview">
+    <div class="container">
+        <div class="filter-bar p-2 mt-3 col-md-12">
+            Otel Filtreleme
+        </div>
+        <br>
+        <div class="course">
+            <div class="col-md-3" style="margin: 0; padding: 0;">
+                <div class="preview">
                     <img class="img" src="img/otel.jpg" alt="">
                 </div>
             </div>
             <div class="col-md-9">
                 <div class="info">
-                    <h2>Otel Adı</h2>
-                    <h6><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i></h6>
+                    <h2>Otel 1</h2>
+                    <h6><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i
+                            class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i
+                            class="fa-solid fa-star"></i></h6>
                     <p class="p-trunc">Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolore, assumenda?</p>
                     <h4>10/8.5</h4>
-             
-                <button type="button" class="btn btn-info"> <a href=""><i class="fa-solid fa-arrow-right text-decoration-none"></i>   Göster</a></button>
-                </div>
-            </div>
-     </div>
-    <div class="course">
-        <div class="col-md-3" style="margin: 0; padding: 0;" >
-                <div  class="preview">
-                    <img class="img" src="img/otel.jpg" alt="">
-                </div>
-            </div>
-            <div class="col-md-9">
-                <div class="info">
-                    <h2>Otel Adı</h2>
-                    <h6><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i></h6>
-                    <p class="p-trunc">Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolore, assumenda?</p>
-                    <h4  >10/8.5</h4>
-             
-                <button type="button" class="btn btn-info"> <a href=""><i class="fa-solid fa-arrow-right text-decoration-none"></i>   Göster</a></button>
-                </div>
-            </div>
-     </div>
-    <div class="course">
-        <div class="col-md-3" style="margin: 0; padding: 0;" >
-                <div  class="preview">
-                    <img class="img" src="img/otel.jpg" alt="">
-                </div>
-            </div>
-            <div class="col-md-9">
-                <div class="info">
-                    <h2>Otel Adı</h2>
-                    <h6><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i></h6>
-                    <p class="p-trunc">Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolore, assumenda?</p>
-                    <h4>10/8.5</h4>
-             
-                <button type="button" class="btn btn-info"> <a href=""><i class="fa-solid fa-arrow-right text-decoration-none"></i>   Göster</a></button>
-                </div>
-            </div>
-     </div>
-</div>
 
-</div>
-<div class="footer-clean">
-    <footer>
-        <div class="container">
-            <div class="row justify-content-center">
-                <div class="col-sm-6 col-md-4 item">
-                    <h3>Services</h3>
-                    <ul>
-                        <li><a href="#">Rent a Car</a></li>
-                        <li><a href="#">Rent Driver Vehicle</a></li>
-                        <li><a href="#">Hotel Reservation</a></li>
-                    </ul>
-                </div>
-                <div class="col-sm-6 col-md-4 item">
-                    <h3>About</h3>
-                    <ul>
-                        <li><a href="#">KVKK</a></li>
-                        <li><a href="#">About Us</a></li>
-                        <li><a href="#">Home Page</a></li>
-                    </ul>
-                </div>
-                
-                <div class="col-lg-3 item social"><a href="#"><i class="icon ion-social-facebook"></i></a><a href="#"><i class="icon ion-social-twitter"></i></a><a href="#"><i class="icon ion-social-snapchat"></i></a><a href="#"><i class="icon ion-social-instagram"></i></a>
-                    <p class="copyright">Güvende Turizm © 2023</p>
+                    <button type="button" class="btn btn-info"> <a href="hotelPage.html"><i
+                                class="fa-solid fa-arrow-right text-decoration-none"></i> Göster</a></button>
                 </div>
             </div>
         </div>
-    </footer>
-</div>
-<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
-<script src="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.1.3/js/bootstrap.bundle.min.js"></script>
+        <div class="course">
+            <div class="col-md-3" style="margin: 0; padding: 0;">
+                <div class="preview">
+                    <img class="img" src="img/otel.jpg" alt="">
+                </div>
+            </div>
+            <div class="col-md-9">
+                <div class="info">
+                    <h2>Otel 2</h2>
+                    <h6><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i
+                            class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i
+                            class="fa-solid fa-star"></i></h6>
+                    <p class="p-trunc">Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolore, assumenda?</p>
+                    <h4>10/8.5</h4>
+
+                    <button type="button" class="btn btn-info"> <a href="hotelPage.html"><i
+                                class="fa-solid fa-arrow-right text-decoration-none"></i> Göster</a></button>
+                </div>
+            </div>
+        </div>
+        <div class="course">
+            <div class="col-md-3" style="margin: 0; padding: 0;">
+                <div class="preview">
+                    <img class="img" src="img/otel.jpg" alt="">
+                </div>
+            </div>
+            <div class="col-md-9">
+                <div class="info">
+                    <h2>Otel 3</h2>
+                    <h6><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i
+                            class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i
+                            class="fa-solid fa-star"></i></h6>
+                    <p class="p-trunc">Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolore, assumenda?</p>
+                    <h4>10/8.5</h4>
+
+                    <button type="button" class="btn btn-info"> <a href="hotelPage.html"><i
+                                class="fa-solid fa-arrow-right text-decoration-none"></i> Göster</a></button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    </div>
+    <div class="footer-clean">
+        <footer>
+            <div class="container">
+                <div class="row justify-content-center">
+                    <div class="col-sm-6 col-md-4 item">
+                        <h3>Services</h3>
+                        <ul>
+                            <li><a href="#">Rent a Car</a></li>
+                            <li><a href="#">Rent Driver Vehicle</a></li>
+                            <li><a href="#">Hotel Reservation</a></li>
+                        </ul>
+                    </div>
+                    <div class="col-sm-6 col-md-4 item">
+                        <h3>About</h3>
+                        <ul>
+                            <li><a href="#">KVKK</a></li>
+                            <li><a href="#">About Us</a></li>
+                            <li><a href="#">Home Page</a></li>
+                        </ul>
+                    </div>
+
+                    <div class="col-lg-3 item social"><a href="#"><i class="icon ion-social-facebook"></i></a><a
+                            href="#"><i class="icon ion-social-twitter"></i></a><a href="#"><i
+                                class="icon ion-social-snapchat"></i></a><a href="#"><i
+                                class="icon ion-social-instagram"></i></a>
+                        <p class="copyright">Güvende Turizm © 2023</p>
+                    </div>
+                </div>
+            </div>
+        </footer>
+    </div>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.1.3/js/bootstrap.bundle.min.js"></script>
 
 
 
-<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
-<script src="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.1.3/js/bootstrap.bundle.min.js"></script>
-<script src="card.js"></script>
-<script src="anasayfa.js"></script>
-<script src="location.js"></script>
-<script src="https://code.jquery.com/jquery-3.4.1.slim.min.js"
-    integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n" crossorigin="anonymous">
-</script>
-<script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js"
-    integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous">
-</script>
-<script src="https://cdn.jsdelivr.net/npm/bootstrap@4.4.1/dist/js/bootstrap.min.js"
-    integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6" crossorigin="anonymous">
-</script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.1.3/js/bootstrap.bundle.min.js"></script>
+    <script src="card.js"></script>
+    <script src="anasayfa.js"></script>
+    <script src="location.js"></script>
+    <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js"
+        integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n" crossorigin="anonymous">
+    </script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js"
+        integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous">
+    </script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.4.1/dist/js/bootstrap.min.js"
+        integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6" crossorigin="anonymous">
+    </script>
 
-        <script src="navbar.js"></script>
+    <script src="navbar.js"></script>
 </body>
 
 </html>

@@ -7,58 +7,146 @@
     <meta name="viewport" content="width=,, initial-scale=1.0">
     <link rel="stylesheet" href="style.css">
     <title>Document</title>
+    <style>
+        body {
+            width: 500px;
+            margin: 0 auto;
+            padding: 50px;
+        }
+
+        div.elem-group {
+            margin: 20px 0;
+        }
+
+        div.elem-group.inlined {
+            width: 49%;
+            display: inline-block;
+            float: left;
+            margin-left: 1%;
+        }
+
+        label {
+            display: block;
+            font-family: 'Nanum Gothic';
+            padding-bottom: 10px;
+            font-size: 1.25em;
+        }
+
+        input,
+        select,
+        textarea {
+            border-radius: 2px;
+            border: 2px solid #777;
+            box-sizing: border-box;
+            font-size: 1.25em;
+            font-family: 'Nanum Gothic';
+            width: 100%;
+            padding: 10px;
+        }
+
+        div.elem-group.inlined input {
+            width: 95%;
+            display: inline-block;
+        }
+
+        textarea {
+            height: 250px;
+        }
+
+        hr {
+            border: 1px dotted #ccc;
+        }
+
+        button {
+            height: 50px;
+            background: orange;
+            border: none;
+            color: white;
+            font-size: 1.25em;
+            font-family: 'Nanum Gothic';
+            border-radius: 4px;
+            cursor: pointer;
+        }
+
+        button:hover {
+            border: 2px solid black;
+        }
+    </style>
 </head>
 
 <body>
-    <div class="cont">
-        <div class="form sign-in">
-            <h2>Hoşgeldiniz</h2>
-            <label>
-                <span>Email</span>
-                <input type="email" />
-            </label>
-            <label>
-                <span>Password</span>
-                <input type="password" />
-            </label>
-            <p class="forgot-pass">Forgot password?</p>
-            <button type="button" class="submit">Sign In</button>
-            <button type="button" class="fb-btn">Connect with <span>facebook</span></button>
+    <form action="reservation.php" method="post">
+        <div class="elem-group">
+            <label for="name">Your Name</label>
+            <input type="text" id="name" name="visitor_name" placeholder="John Doe" pattern=[A-Z\sa-z]{3,20} required>
         </div>
-        <div class="sub-cont">
-            <div class="img">
-                <div class="img__text m--up">
-                    <h2>New here?</h2>
-                    <p>Sign up and discover great amount of new opportunities!</p>
-                </div>
-                <div class="img__text m--in">
-                    <h2>One of us?</h2>
-                    <p>If you already has an account, just sign in. We've missed you!</p>
-                </div>
-                <div class="img__btn">
-                    <span class="m--up">Sign Up</span>
-                    <span class="m--in">Sign In</span>
-                </div>
-            </div>
-            <div class="form sign-up">
-                <h2>Time to feel like home,</h2>
-                <label>
-                    <span>Name</span>
-                    <input type="text" />
-                </label>
-                <label>
-                    <span>Email</span>
-                    <input type="email" />
-                </label>
-                <label>
-                    <span>Password</span>
-                    <input type="password" />
-                </label>
-                <button type="button" class="submit">Sign Up</button>
-                <button type="button" class="fb-btn">Join with <span>facebook</span></button>
-            </div>
+        <div class="elem-group">
+            <label for="email">Your E-mail</label>
+            <input type="email" id="email" name="visitor_email" placeholder="john.doe@email.com" required>
         </div>
-    </div>
+        <div class="elem-group">
+            <label for="phone">Your Phone</label>
+            <input type="tel" id="phone" name="visitor_phone" placeholder="498-348-3872"
+                pattern=(\d{3})-?\s?(\d{3})-?\s?(\d{4}) required>
+        </div>
+        <hr>
+        <div class="elem-group inlined">
+            <label for="adult">Adults</label>
+            <input type="number" id="adult" name="total_adults" placeholder="2" min="1" required>
+        </div>
+        <div class="elem-group inlined">
+            <label for="child">Children</label>
+            <input type="number" id="child" name="total_children" placeholder="2" min="0" required>
+        </div>
+        <div class="elem-group inlined">
+            <label for="checkin-date">Check-in Date</label>
+            <input type="date" id="checkin-date" name="checkin" required>
+        </div>
+        <div class="elem-group inlined">
+            <label for="checkout-date">Check-out Date</label>
+            <input type="date" id="checkout-date" name="checkout" required>
+        </div>
+        <div class="elem-group">
+            <label for="room-selection">Select Room Preference</label>
+            <select id="room-selection" name="room_preference" required>
+                <option value="">Choose a Room from the List</option>
+                <option value="connecting">Oda 1</option>
+                <option value="adjoining">Oda 2</option>
+                <option value="adjacent">Oda 3</option>
+            </select>
+        </div>
+        <hr>
+        <div class="elem-group">
+            <label for="message">Anything Else?</label>
+            <textarea id="message" name="visitor_message" placeholder="Tell us anything else that might be important."
+                required></textarea>
+        </div>
+        <button type="submit">Send
+        </button>
+    </form>
+    <script>
+        var currentDateTime = new Date();
+        var year = currentDateTime.getFullYear();
+        var month = (currentDateTime.getMonth() + 1);
+        var date = (currentDateTime.getDate() + 1);
+
+        if (date < 10) {
+            date = '0' + date;
+        }
+        if (month < 10) {
+            month = '0' + month;
+        }
+
+        var dateTomorrow = year + "-" + month + "-" + date;
+        var checkinElem = document.querySelector("#checkin-date");
+        var checkoutElem = document.querySelector("#checkout-date");
+
+        checkinElem.setAttribute("min", dateTomorrow);
+
+        checkinElem.onchange = function () {
+            checkoutElem.setAttribute("min", this.value);
+        }
+    </script>
 </body>
 
 </html>
