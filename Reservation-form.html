@@ -140,6 +140,10 @@
         <h2>Reservation Form</h2>
         <form action="reservation.php" method="post">
             <div class="elem-group">
+                <label for="name">Otel Adı:</label>
+                <input type="text" id="name" name="visitor_name" placeholder="Otel 1" pattern=[A-Z\sa-z]{3,20} required>
+            </div>
+            <div class="elem-group">
                 <label for="name">Adınız:</label>
                 <input type="text" id="name" name="visitor_name" placeholder="John Doe" pattern=[A-Z\sa-z]{3,20}
                     required>
