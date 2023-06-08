@@ -2,16 +2,42 @@
 <html lang="en">
 
 <head>
+
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=,, initial-scale=1.0">
-    <link rel="stylesheet" href="style.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@200&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.4.1/dist/css/bootstrap.min.css"
+        integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
+        integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link
+        href="https://fonts.googleapis.com/css2?family=Alkatra&family=Lato:wght@100&family=Montserrat:wght@100;400&family=Nunito:wght@500&family=Quicksand:wght@300&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700&family=Source+Sans+Pro:wght@200&display=swap"
+        rel="stylesheet">
+
+
     <style>
         body {
+            background: linear-gradient(90deg, rgba(230, 241, 243, 1) 0%, rgba(169, 201, 199, 1) 35%, rgba(189, 176, 203, 1) 100%);
+        }
+
+        .reserve-form {
             width: 500px;
             margin: 0 auto;
             padding: 50px;
+            background-color: white;
+            margin-top: 150px;
+            border: 1px solid #64CACF;
+            margin-bottom: 50px;
         }
 
         div.elem-group {
@@ -59,71 +85,112 @@
 
         button {
             height: 50px;
-            background: orange;
+            background: #64CACF;
             border: none;
             color: white;
             font-size: 1.25em;
             font-family: 'Nanum Gothic';
             border-radius: 4px;
             cursor: pointer;
+
         }
 
         button:hover {
             border: 2px solid black;
         }
+
+        .buton-reserve {
+            display: flex;
+            justify-content: center;
+        }
     </style>
 </head>
 
 <body>
-    <form action="reservation.php" method="post">
-        <div class="elem-group">
-            <label for="name">Your Name</label>
-            <input type="text" id="name" name="visitor_name" placeholder="John Doe" pattern=[A-Z\sa-z]{3,20} required>
+    <header>
+        <div class="logo"><img src="img/k.png" height="80rem" alt="logo" /></div>
+        <div class="hamburger">
+            <div class="line"></div>
+            <div class="line"></div>
+            <div class="line"></div>
         </div>
-        <div class="elem-group">
-            <label for="email">Your E-mail</label>
-            <input type="email" id="email" name="visitor_email" placeholder="john.doe@email.com" required>
-        </div>
-        <div class="elem-group">
-            <label for="phone">Your Phone</label>
-            <input type="tel" id="phone" name="visitor_phone" placeholder="498-348-3872"
-                pattern=(\d{3})-?\s?(\d{3})-?\s?(\d{4}) required>
-        </div>
-        <hr>
-        <div class="elem-group inlined">
-            <label for="adult">Adults</label>
-            <input type="number" id="adult" name="total_adults" placeholder="2" min="1" required>
-        </div>
-        <div class="elem-group inlined">
-            <label for="child">Children</label>
-            <input type="number" id="child" name="total_children" placeholder="2" min="0" required>
-        </div>
-        <div class="elem-group inlined">
-            <label for="checkin-date">Check-in Date</label>
-            <input type="date" id="checkin-date" name="checkin" required>
-        </div>
-        <div class="elem-group inlined">
-            <label for="checkout-date">Check-out Date</label>
-            <input type="date" id="checkout-date" name="checkout" required>
-        </div>
-        <div class="elem-group">
-            <label for="room-selection">Select Room Preference</label>
-            <select id="room-selection" name="room_preference" required>
-                <option value="">Choose a Room from the List</option>
-                <option value="connecting">Oda 1</option>
-                <option value="adjoining">Oda 2</option>
-                <option value="adjacent">Oda 3</option>
-            </select>
-        </div>
-        <hr>
-        <div class="elem-group">
-            <label for="message">Anything Else?</label>
-            <textarea id="message" name="visitor_message" placeholder="Tell us anything else that might be important."
-                required></textarea>
-        </div>
-        <button type="submit">Send
-        </button>
-    </form>
+        <nav class="nav-bar">
+            <ul>
+                <li>
+                    <a href="index.html" class="">Anasayfa</a>
+                </li>
+                <li>
+                    <a href="https://guvendekal.net/about" class="">Hakkımzıda</a>
+                </li>
+                <li>
+                    <a href="https://guvendekal.net/contact" class="">İletişim</a>
+                </li>
+                <li>
+                    <a href="" class="">Dil</a>
+                </li>
+                <li>
+                    <a href="Reservation-form.html" class="active">Rezarvasyon</a>
+                </li>
+            </ul>
+
+
+        </nav>
+    </header>
+    <div class="reserve-form">
+        <h2>Reservation Form</h2>
+        <form action="reservation.php" method="post">
+            <div class="elem-group">
+                <label for="name">Adınız:</label>
+                <input type="text" id="name" name="visitor_name" placeholder="John Doe" pattern=[A-Z\sa-z]{3,20}
+                    required>
+            </div>
+            <div class="elem-group">
+                <label for="email">E-mail:</label>
+                <input type="email" id="email" name="visitor_email" placeholder="john.doe@email.com" required>
+            </div>
+            <div class="elem-group">
+                <label for="phone">Telefon Numarası:</label>
+                <input type="tel" id="phone" name="visitor_phone" placeholder="498-348-3872"
+                    pattern=(\d{3})-?\s?(\d{3})-?\s?(\d{4}) required>
+            </div>
+            <hr>
+            <div class="elem-group inlined">
+                <label for="adult">Yetişkin Sayısı:</label>
+                <input type="number" id="adult" name="total_adults" placeholder="2" min="1" required>
+            </div>
+            <div class="elem-group inlined">
+                <label for="child">Çocuk Sayısı:</label>
+                <input type="number" id="child" name="total_children" placeholder="2" min="0" required>
+            </div>
+            <div class="elem-group inlined">
+                <label for="checkin-date">Giriş Tarihi:</label>
+                <input type="date" id="checkin-date" name="checkin" required>
+            </div>
+            <div class="elem-group inlined">
+                <label for="checkout-date">Çıkış Tarihi:</label>
+                <input type="date" id="checkout-date" name="checkout" required>
+            </div>
+            <div class="elem-group">
+                <label for="room-selection">Oda Seçimi:</label>
+                <select id="room-selection" name="room_preference" required>
+                    <option value="">Listeden oda seçiniz:</option>
+                    <option value="connecting">Oda 1</option>
+                    <option value="adjoining">Oda 2</option>
+                    <option value="adjacent">Oda 3</option>
+                </select>
+            </div>
+            <hr>
+            <div class="elem-group">
+                <label for="message">Eklemek İstedikleriniz:</label>
+                <textarea id="message" name="visitor_message"
+                    placeholder="Tell us anything else that might be important." required></textarea>
+            </div>
+            <div class="buton-reserve">
+                <button type="submit">Gönder
+                </button>
+            </div>
+        </form>
+    </div>
     <script>
         var currentDateTime = new Date();
         var year = currentDateTime.getFullYear();
@@ -147,6 +214,37 @@
             checkoutElem.setAttribute("min", this.value);
         }
     </script>
+    <div class="footer-clean">
+        <footer>
+            <div class="container" style="position: relative;">
+                <div class="row justify-content-center">
+                    <div class="col-sm-6 col-md-4 item">
+                        <h3>Services</h3>
+                        <ul>
+                            <li><a href="#">Rent a Car</a></li>
+                            <li><a href="#">Rent Driver Vehicle</a></li>
+                            <li><a href="#">Hotel Reservation</a></li>
+                        </ul>
+                    </div>
+                    <div class="col-sm-6 col-md-4 item">
+                        <h3>About</h3>
+                        <ul>
+                            <li><a href="#">KVKK</a></li>
+                            <li><a href="#">About Us</a></li>
+                            <li><a href="#">Home Page</a></li>
+                        </ul>
+                    </div>
+
+                    <div class="col-lg-3 item social"><a href="#"><i class="icon ion-social-facebook"></i></a><a
+                            href="#"><i class="icon ion-social-twitter"></i></a><a href="#"><i
+                                class="icon ion-social-snapchat"></i></a><a href="#"><i
+                                class="icon ion-social-instagram"></i></a>
+                        <p class="copyright">Güvende Turizm © 2023</p>
+                    </div>
+                </div>
+            </div>
+        </footer>
+    </div>
 </body>
 
 </html>
